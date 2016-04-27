@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Angular 2 ES5 App</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+
+    <!-- 1. Load libraries -->
+    <!-- IE required polyfills, in this exact order -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>   
+
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.umd.js"></script>
+    <script src="node_modules/angular2/bundles/angular2-all.umd.js"></script>
+
+    <!-- 2. Load our 'modules' -->
+    <script src='app/courses/course.service.js'></script>
+    <script src='app/courses/course.component.js'></script>
+    <script src='app/courses/courses.component.js'></script>
+    <script src='app/locations/location.service.js'></script>
+    <script src='app/locations/location.component.js'></script>
+    <script src='app/faculty/faculty.service.js'></script>
+    <script src='app/faculty/faculty.detail.component.js'></script>
+    <script src='app/faculty/faculty.list.component.js'></script>
+    <script src='app/faculty/faculty.component.js'></script>
+    <script src='app/app.component.js'></script>
+    <script src='app/main.js'></script>
+
+
+	</head>
+
+  <!-- 3. Display the application -->
+  <body>
+    <my-app>Loading...</my-app>
+  </body>
+</html>
